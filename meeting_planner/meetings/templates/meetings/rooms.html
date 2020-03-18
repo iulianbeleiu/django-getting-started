@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rooms</title>
+</head>
+<body>
+    <h1>Rooms: </h1>
+    <ul>
+        {% for room in rooms %}
+            <li>Room {{ room.name }} floor {{ room.floor_number }} room number {{ room.room_number }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
